@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 
 namespace CLS.Pages
 {
-    public class AddCasePage
+    public class AddCasePage : PageBase
     {
         public readonly AddCasePageMap Map;
 
@@ -13,12 +13,22 @@ namespace CLS.Pages
             Map = new AddCasePageMap();
         }
 
+        public AddCasePage Goto()
+        {
+            CLSMenu.AddCasesLink.Click();
+            return this;
+        }
+
+        public void SaveCaseWithoutFill()
+        {
+           Map.SaveCaseButton.Click();   
+        }
+
+
     }
 
     public class AddCasePageMap
     {
-        public Element ExploreMenu => Driver.FindElement(By.CssSelector(".riotbar-left-content"));
-
-        public Element SupportLink => Driver.FindElement(By.CssSelector("[data-riotbar-link-id='support']"));
+        public Element SaveCaseButton => Driver.FindElement(By.Id("submit"));
     }
 }

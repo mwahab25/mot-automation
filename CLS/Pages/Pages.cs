@@ -5,21 +5,21 @@ namespace CLS.Pages
 {
     public static class Pages
     {
-        [ThreadStatic] public static ViewCasesPage Home;
+        [ThreadStatic] public static ViewCasesPage ViewCase;
 
-        [ThreadStatic] public static AddCasePage Support;
+        [ThreadStatic] public static AddCasePage AddCase;
 
 
         public static void Init()
         {
-            Home = new ViewCasesPage();
-            Support = new AddCasePage();
+            ViewCase = new ViewCasesPage();
+            AddCase = new AddCasePage();
         }
 
         public static void Goto()
         {
-            Driver.Goto("https://nexus.leagueoflegends.com/en-us/esports/");
-            Driver.Wait.Until(driver => Home.Map.PlayNowSignupButton.Displayed);
+            Driver.Goto("https://stg-webapps.mot.gov.sa/CLS");
+            Driver.Wait.Until(driver => ViewCase.Map.SearchTextbox.Displayed);
         }
     }
 }

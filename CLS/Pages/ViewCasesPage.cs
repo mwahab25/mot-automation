@@ -15,6 +15,6 @@ namespace CLS.Pages
 
 	public class ViewCasesPageMap
 	{
-        public Element PlayNowSignupButton => Driver.FindElement(By.CssSelector("[data-riotbar-link-id='signup']"));
+        public Element SearchTextbox => Driver.FindElement(By.CssSelector("//input[@type='search']"));
 	}
 }
