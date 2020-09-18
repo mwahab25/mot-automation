@@ -14,7 +14,8 @@ namespace Tests
         {
             Pages.Goto();
             Pages.AddCase.Goto();
-            Pages.AddCase.SaveCaseWithoutFill();
+            Pages.AddCase.ClickCard("Regular Season");
+            //Pages.AddCase.SaveCaseWithoutFill();
             //Assert.That(Pages.ServiceStatus.ServiceOnline("Game"));
         }
 
@@ -23,6 +24,7 @@ namespace Tests
         {
             Pages.Goto();
             Pages.AddCase.Goto();
+            Pages.AddCase.ClickCard("Playoffs");
         }
     }
 }

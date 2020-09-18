@@ -1,0 +1,7 @@
+Starting timestamp: 9/18/2020 11:22:21 PM
+Test: Save_case_without_fill_fields
+[INFO]: Browser: chrome
+    [STEP]: Navigate to https://watch.na.lolesports.com/standings
+    [STEP]: Click LEC League Filter
+    [STEP]: Click Regular Season Stage
+[INFO]: Close Browser

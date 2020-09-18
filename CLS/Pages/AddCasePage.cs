@@ -8,15 +8,15 @@ namespace CLS.Pages
     {
         public readonly AddCasePageMap Map;
 
+        public AddCasePage Goto()
+        {
+            CLSMenu.GotoDeckPage();
+            return this;
+        }
+
         public AddCasePage()
         {
             Map = new AddCasePageMap();
-        }
-
-        public AddCasePage Goto()
-        {
-            CLSMenu.AddCasesLink.Click();
-            return this;
         }
 
         public void SaveCaseWithoutFill()
@@ -24,11 +24,22 @@ namespace CLS.Pages
            Map.SaveCaseButton.Click();   
         }
 
+         public void ClickCard(string name)
+        {
+          // Map.Card(name).Click();
+           Map.StageByName(name).Click();
+        }
 
     }
 
     public class AddCasePageMap
     {
         public Element SaveCaseButton => Driver.FindElement(By.Id("submit"));
+
+        public Element Card(string name) => Driver.FindElement(By.CssSelector($"a[href*='{name}']"), $"Card: {name}");
+
+        public Element StageByName(string name) => Driver.FindElement(
+            by: By.XPath($"//div[@class='stage-option' and text()='{name}']"),
+            elementName: $"{name} Stage");
     }
 }

@@ -56,7 +56,7 @@ namespace Framework.Selenium
             {
                 url = $"http://{url}";
             }
-            FW.Log.Info(url);
+            FW.Log.Step($"Navigate to {url}");
             Current.Navigate().GoToUrl(url);
         }
 
@@ -90,6 +90,7 @@ namespace Framework.Selenium
             {
                 FW.Log.Info("Close Browser");
                 Current.Quit();
+                Current.Dispose();
             }
         }
 

@@ -10,11 +10,14 @@ namespace Tests.Base
         protected TestBase()
         {
             FW.Init();
+            FW.CreateTestResultsDirectory();
         }
 
         [SetUp]
         public virtual void Setup()
         {
+            FW.SetLogger();
+            
             Driver.Init(
                 type: FW.Config.Driver.Type,
                 browser: FW.Config.Driver.Browser,

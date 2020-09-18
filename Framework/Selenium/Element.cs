@@ -133,6 +133,7 @@ namespace Framework.Selenium
         /// </summary>
         public void Click()
         {
+            FW.Log.Step($"Click {Name}");
             Console.WriteLine(string.IsNullOrEmpty(Name)
                         ? $"Click element"
                         : $"Click on {Name}");
@@ -186,6 +187,7 @@ namespace Framework.Selenium
         /// </summary>
         public void Submit()
         {
+            FW.Log.Step($"Submit {Name}");
             Current.Submit();
         }
 
