@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mot-automation\\Framework\\Framework.csproj": {}
+    "d:\\mot-automation\\Framework\\Framework.csproj": {}
   },
   "projects": {
-    "D:\\mot-automation\\Framework\\Framework.csproj": {
+    "d:\\mot-automation\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mot-automation\\Framework\\Framework.csproj",
+        "projectUniqueName": "d:\\mot-automation\\Framework\\Framework.csproj",
         "projectName": "Framework",
-        "projectPath": "D:\\mot-automation\\Framework\\Framework.csproj",
+        "projectPath": "d:\\mot-automation\\Framework\\Framework.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\mot-automation\\Framework\\obj\\",
+        "outputPath": "d:\\mot-automation\\Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

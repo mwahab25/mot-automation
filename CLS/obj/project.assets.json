@@ -6211,11 +6211,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mot-automation\\CLS\\CLS.csproj",
+      "projectUniqueName": "d:\\mot-automation\\CLS\\CLS.csproj",
       "projectName": "CLS",
-      "projectPath": "D:\\mot-automation\\CLS\\CLS.csproj",
+      "projectPath": "d:\\mot-automation\\CLS\\CLS.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\mot-automation\\CLS\\obj\\",
+      "outputPath": "d:\\mot-automation\\CLS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -6235,8 +6235,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\mot-automation\\Framework\\Framework.csproj": {
-              "projectPath": "D:\\mot-automation\\Framework\\Framework.csproj"
+            "d:\\mot-automation\\Framework\\Framework.csproj": {
+              "projectPath": "d:\\mot-automation\\Framework\\Framework.csproj"
             }
           }
         }

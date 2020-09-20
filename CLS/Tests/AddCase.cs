@@ -10,7 +10,7 @@ namespace Tests
     public class AddCase : TestBase
     {
         [Test, Parallelizable, Category("AddCase")]
-        public void Save_case_without_fill_fields()
+        public void Secretary_Save_case_without_fill_fields()
         {
             Pages.Goto();
             Pages.AddCase.Goto();
@@ -20,11 +20,21 @@ namespace Tests
         }
 
         [Test, Parallelizable, Category("AddCase")]
-        public void Save_case_with_fill_all_fields()
+        public void Secretary_Save_case_with_fill_all_fields()
         {
             Pages.Goto();
             Pages.AddCase.Goto();
             Pages.AddCase.ClickCard("Playoffs");
         }
+
+        [Test, Parallelizable, Category("AddCase")]
+        public void AddCasetest()
+        {
+            Pages.Goto();
+            Pages.AddCase.Goto();
+            //Pages.AddCase.SaveCase1(,,,,,,);
+        }
+
+
     }
 }

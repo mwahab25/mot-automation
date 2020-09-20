@@ -12,26 +12,27 @@ namespace CLS.Pages
             Map = new CLSMenuMap();
         }
 
-        public void GotoCardsPage()
+        public void GotoAddCasePage()
         {
-            //Map.CardsTabLink.Click();
-            Map.LeagueByName("LCS").Click();
+            //Map.Page1Link.Click();
+            //Map.ChoiceByName("LCS").Click();
+            Map.AddCasesLink.Click();
         }
 
-        public void GotoDeckPage()
+        public void GotoViewCasesPage()
         {
-           // Map.DeckBuilderLink.Click();
-             Map.LeagueByName("LEC").Click();
+           // Map.Page2Link.Click();
+             Map.ChoiceByName("LEC").Click();
         }
     }
     public class CLSMenuMap
     {
-        public Element CardsTabLink => Driver.FindElement(By.CssSelector("a[href='/cards']"), "Cards Link");
-        public Element DeckBuilderLink => Driver.FindElement(By.CssSelector("a[href='/deckbuilder']"), "Deck Builder Link");
+        public Element Page1Link => Driver.FindElement(By.CssSelector("a[href='/page1']"), "Cards Link");
+        public Element Page2Link => Driver.FindElement(By.CssSelector("a[href='/page2']"), "Deck Builder Link");
 
-        public Element LeagueByName(string name) => Driver.FindElement(
+        public Element ChoiceByName(string name) => Driver.FindElement(
                 by: By.XPath($"//div[@class='name' and text()='{name}']"),
-                elementName: $"{name} League Filter");
+                elementName: $"{name} choice Filter");
 
 
         public Element ViewCasesLink => Driver.FindElement(By.XPath("//a[contains(@href,'/CLS/Case')]"), "View Cases Link");
